@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".main.MainActivity">
+
+
+    <LinearLayout
+        android:background="@drawable/noraml_bg"
+        android:id="@+id/gg"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        android:gravity="center"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:textColor="#ffffff"
+            android:textSize="35dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:text="Upload News"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="43dp" />
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/savedPosts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Saved Posts" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:id="@+id/spin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Select category"
+                android:textSize="20dp" />
+
+            <CheckBox
+                android:id="@+id/politics_sel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spin"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#3F51B5"
+                android:text="Politics" />
+
+
+            <CheckBox
+                android:id="@+id/sports_sel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/politics_sel"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#3F51B5"
+                android:text="Sports" />
+
+            <CheckBox
+                android:id="@+id/startup_sel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sports_sel"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#3F51B5"
+                android:text="Startup" />
+
+            <CheckBox
+                android:id="@+id/tech_sel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/startup_sel"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#3F51B5"
+                android:text="Technology" />
+
+            <CheckBox
+                android:id="@+id/business_sel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tech_sel"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#3F51B5"
+                android:text="Business" />
+
+            <CheckBox
+                android:id="@+id/international_sel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/business_sel"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#3F51B5"
+                android:text="International" />
+
+            <CheckBox
+                android:id="@+id/miscell_sel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/international_sel"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#3F51B5"
+                android:text="Miscellanaeous" />
+
+
+            <CheckBox
+                android:id="@+id/influences_sel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/miscell_sel"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#3F51B5"
+                android:text="Influences" />
+
+
+
+            <CheckBox
+                android:layout_marginTop="10dp"
+                android:id="@+id/entertain_sel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/influences_sel"
+                android:backgroundTint="#3F51B5"
+                android:text="Entertaintment" />
+
+
+            <Spinner
+                android:visibility="gone"
+                android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+                android:id="@+id/spinner1"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/entertain_sel"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/spinner_bg"
+                android:padding="10dp" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_below="@+id/spinner1"
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Title"
+                android:textSize="20dp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                app:counterEnabled="true"
+                app:counterMaxLength="150"
+                android:id="@+id/bel1"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/text1"
+                android:layout_centerHorizontal="true"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/t1"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_place"
+                    android:hint="Enter News title"
+                    android:inputType="text|textMultiLine|textCapSentences"
+                    android:maxLines="4"
+                    android:textColor="#fff"
+                    android:textSize="20dp"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+<!--            <EditText-->
+<!--                android:id="@+id/t1oii"-->
+<!--                android:layout_width="350dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/text1"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:background="@drawable/text_place"-->
+<!--                android:gravity="top"-->
+<!--                android:hint="Enter News title"-->
+<!--                android:inputType="text|textMultiLine|textCapSentences"-->
+<!--                android:maxLines="4"-->
+<!--                android:maxLength="100"-->
+<!--                android:padding="10dp"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="20dp" />-->
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:id="@+id/shdete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bel1"
+                android:layout_marginTop="30dp"
+                android:text="Short description"
+                android:textSize="20dp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                app:counterEnabled="true"
+                app:counterMaxLength="250"
+                android:id="@+id/bel2"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/shdete"
+                android:layout_centerHorizontal="true"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/t2"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_place"
+                    android:hint="Enter short description"
+                    android:inputType="text|textMultiLine|textCapSentences"
+                    android:maxLines="20"
+                    android:textColor="#fff"
+                    android:textSize="20dp"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+<!--            <EditText-->
+<!--                android:id="@+id/t2"-->
+<!--                android:layout_width="350dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/shdete"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:background="@drawable/text_place"-->
+<!--                android:gravity="top"-->
+<!--                android:hint="Enter Your Short Description"-->
+<!--                android:inputType="text|textMultiLine|textCapSentences"-->
+<!--                android:maxLength="470"-->
+<!--                android:maxLines="50"-->
+<!--                android:padding="10dp"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="20dp" />-->
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bel2"
+                android:id="@+id/tt"
+                android:text="Main Image"
+                android:textSize="20dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/tt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_place"
+                app:srcCompat="@drawable/ic_launcher_foreground"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/browse"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_bg"
+                android:padding="10dp"
+                android:text="Browse Image"
+                android:textColor="#ffffff" />
+
+
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:id="@+id/longText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/browse"
+                android:layout_marginTop="20dp"
+                android:text="Long Description"
+                android:textSize="20dp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                app:counterEnabled="true"
+                app:counterMaxLength="1200"
+                android:id="@+id/bel3"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/longText"
+                android:layout_centerHorizontal="true"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/longPhp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_place"
+                    android:hint="Enter Long description"
+                    android:inputType="text|textMultiLine|textCapSentences"
+                    android:maxLines="50"
+                    android:textColor="#fff"
+                    android:textSize="20dp"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+<!--            <EditText-->
+<!--                android:id="@+id/longPhp"-->
+<!--                android:layout_width="350dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/longText"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:background="@drawable/text_place"-->
+<!--                android:gravity="top"-->
+<!--                android:hint="Enter Your Long Description"-->
+<!--                android:inputType="text|textMultiLine|textCapSentences"-->
+<!--                android:maxLines="100"-->
+<!--                android:maxLength="1250"-->
+<!--                android:padding="10dp"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="20dp" />-->
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/play_audio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="play Adudio"
+                android:layout_below="@id/bel3"
+                />
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:id="@+id/vid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/play_audio"
+                android:layout_marginTop="20dp"
+                android:text="Youtube Video-id"
+                android:textSize="20dp" />
+
+
+            <EditText
+                android:id="@+id/videoId"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vid"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_place"
+                android:gravity="top"
+                android:hint="Enter Your Video URL"
+                android:inputType="text|textMultiLine|textCapSentences"
+                android:lines="1"
+                android:maxLines="10"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+
+
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:id="@+id/stt"
+                android:layout_below="@+id/videoId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/startTime"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/text_place"
+                    android:gravity="top"
+                    android:hint="Start"
+                    android:inputType="text|textMultiLine|textCapSentences"
+                    android:lines="1"
+                    android:maxLines="10"
+                    android:padding="10dp"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/endTime"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/text_place"
+                    android:gravity="top"
+                    android:hint="End"
+                    android:inputType="text|textMultiLine|textCapSentences"
+                    android:lines="1"
+                    android:maxLines="10"
+                    android:padding="10dp"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:id="@+id/news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/stt"
+                android:layout_marginTop="20dp"
+                android:text="News Source name"
+                android:textSize="20dp" />
+
+
+            <EditText
+                android:id="@+id/NewsSource"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/news"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_place"
+                android:gravity="top"
+                android:hint="Enter Your Soruce name"
+                android:inputType="text|textMultiLine|textCapSentences"
+                android:lines="1"
+                android:maxLines="10"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:id="@+id/xyz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/NewsSource"
+                android:layout_marginTop="20dp"
+                android:text="Select Source Image"
+                android:textSize="20dp" />
+
+
+            <ImageView
+                android:padding="10dp"
+                android:background="@drawable/text_place"
+                android:id="@+id/srcimage"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/NewsSource"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_launcher_foreground" />
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_bg"
+                android:id="@+id/selectImage"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/srcimage"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:text="select Image"
+                android:visibility="visible" />
+
+
+            <AutoCompleteTextView
+                android:id="@+id/autocomplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/selectImage"
+                android:hint="Search Location"
+                android:visibility="gone" />
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:id="@+id/Loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/autocomplete"
+                android:layout_marginTop="20dp"
+                android:text="Location"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Loc"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_place"
+                android:gravity="top"
+                android:hint="Enter Your News Location"
+                android:inputType="text|textMultiLine|textCapSentences"
+                android:lines="1"
+                android:maxLines="10"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:visibility="visible"
+                android:id="@+id/lang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/location"
+                android:layout_marginTop="30dp"
+                android:text="Language"
+                android:textSize="20dp" />
+
+            <CheckBox
+                android:visibility="gone"
+                android:id="@+id/English"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lang"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#3F51B5"
+                android:text="English" />
+
+            <CheckBox
+                android:visibility="gone"
+                android:id="@+id/hindi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/English"
+                android:backgroundTint="#3F51B5"
+                android:text="hindi" />
+
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:id="@+id/radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/langlang"
+                android:layout_marginTop="30dp"
+                android:text="Want Video audio"
+                android:textSize="20dp" />
+
+
+            <RadioGroup
+                android:id="@+id/rg5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radio"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rg5r1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#3F51B5"
+                    android:checked="true"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="NO"
+                    tools:ignore="OnClick" />
+
+                <RadioButton
+                    android:id="@+id/rg5r2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#3F51B5"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="YES"
+                    tools:ignore="OnClick" />
+
+            </RadioGroup>
+
+
+            <DatePicker
+                android:id="@+id/datePicker1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:visibility="visible" />
+
+            <Button
+                android:visibility="gone"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_bg"
+                android:layout_marginTop="0dp"
+                android:layout_below="@+id/datePicker1"
+                android:layout_marginLeft="60dp"
+                android:id="@+id/button1"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get Date" />
+
+            <TextView
+                android:visibility="gone"
+                android:textColor="#000"
+                android:padding="8dp"
+                android:background="@drawable/text_place"
+                android:layout_below="@+id/datePicker1"
+                android:text="select date"
+                android:id="@+id/selectDate"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/langlang"
+                android:layout_below="@+id/lang"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:background="#251F1F"
+                    android:layout_toRightOf="@+id/english_review"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hindi"
+                    android:id="@+id/hindi_review"
+                    />
+
+                <Button
+                    android:background="#251F1F"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="English"
+                    android:id="@+id/english_review"
+                    />
+
+            </RelativeLayout>
+
+            <ProgressBar
+                android:layout_marginBottom="0dp"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progress"
+                />
+
+
+            <Button
+                android:id="@+id/upload"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/datePicker1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_bg"
+                android:padding="10dp"
+                android:text="Upload News"
+                android:textColor="#FFF" />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

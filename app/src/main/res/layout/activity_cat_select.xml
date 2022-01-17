@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:background="@drawable/noraml_bg"
+        android:id="@+id/dash"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        android:gravity="center"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:textColor="#ffffff"
+            android:textSize="35dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:text="Select Category"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="43dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/sports"
+        android:background="@drawable/cat_bg"
+        android:layout_width="300dp"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:text="Sports"
+        app:layout_constraintTop_toBottomOf="@+id/dash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <Button
+        android:id="@+id/entertain"
+        android:background="@drawable/cat_bg"
+        android:layout_width="300dp"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:text="Entertaintment"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/sports"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <Button
+        android:id="@+id/business"
+        android:background="@drawable/cat_bg"
+        android:layout_width="300dp"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:text="Business"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/entertain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <Button
+        android:id="@+id/startup"
+        android:background="@drawable/cat_bg"
+        android:layout_width="300dp"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:text="Startup"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/business"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <Button
+        android:id="@+id/technology"
+        android:background="@drawable/cat_bg"
+        android:layout_width="300dp"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:text="Technology"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/startup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <Button
+        android:id="@+id/politics"
+        android:background="@drawable/cat_bg"
+        android:layout_width="300dp"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:text="Politics"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/technology"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <Button
+        android:id="@+id/international"
+        android:background="@drawable/cat_bg"
+        android:layout_width="300dp"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:text="International"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/politics"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <Button
+        android:id="@+id/Miscellaneous"
+        android:background="@drawable/cat_bg"
+        android:layout_width="300dp"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:text="Miscellaneous"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/international"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <Button
+        android:id="@+id/influences"
+        android:background="@drawable/cat_bg"
+        android:layout_width="300dp"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:text="Influences"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/Miscellaneous"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="74dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

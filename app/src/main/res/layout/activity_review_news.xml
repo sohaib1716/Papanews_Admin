@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191818"
+    tools:context=".main.Review_news">
+
+
+    <EditText
+        android:id="@+id/title_re"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_place"
+        android:gravity="top"
+        android:hint="Enter News title"
+        android:inputType="text|textMultiLine|textCapSentences"
+        android:maxLines="20"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+
+
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/shdete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_re"
+        android:layout_marginTop="30dp"
+        android:text="Short description"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/short_re"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shdete"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_place"
+        android:gravity="top"
+        android:hint="Enter Your Short Description"
+        android:inputType="text|textMultiLine|textCapSentences"
+        android:maxLines="50"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/longText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/short_re"
+        android:layout_marginTop="20dp"
+        android:text="Long Description"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/long_re"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/longText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_place"
+        android:gravity="top"
+        android:hint="Enter Your Long Description"
+        android:inputType="text|textMultiLine|textCapSentences"
+        android:maxLines="100"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/Loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/long_re"
+        android:layout_marginTop="20dp"
+        android:text="Location"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/location_re"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Loc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_place"
+        android:gravity="top"
+        android:hint="Enter Your News Location"
+        android:inputType="text|textMultiLine|textCapSentences"
+        android:lines="1"
+        android:maxLines="10"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+
+
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location_re"
+        android:layout_marginTop="20dp"
+        android:text="News Source name"
+        android:textSize="20dp" />
+
+
+    <EditText
+        android:id="@+id/source_re"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/news"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_place"
+        android:gravity="top"
+        android:hint="Enter Your Soruce name"
+        android:inputType="text|textMultiLine|textCapSentences"
+        android:lines="1"
+        android:maxLines="10"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+
+
+    <Button
+        android:id="@+id/hindi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="Review Hindi"
+        android:layout_marginBottom="30dp"
+        />
+
+    <Button
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/hindi"
+        android:id="@+id/english"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Review English"
+        />
+
+</RelativeLayout>
